@@ -1,41 +1,46 @@
 # TelecomX
 
-📊 Proyecto: Análisis de Evasión de Clientes (Churn)
-📝 Descripción del Proyecto
-Este proyecto consiste en un Análisis Exploratorio de Datos (EDA) enfocado en identificar los factores que influyen en la pérdida de clientes de una compañía de servicios. El objetivo es transformar datos brutos en insights estratégicos para reducir la tasa de abandono y mejorar la retención.
+# 📊 Análisis de Evasión de Clientes (Churn) - Telecomunicaciones
 
-🚀 Funcionalidades Principales
-Limpieza de Datos: Procesamiento de variables y normalización de la columna objetivo churn.
+## 📝 Descripción del Proyecto
+Este proyecto desarrolla un **Análisis Exploratorio de Datos (EDA)** detallado sobre la pérdida de clientes en una empresa de telecomunicaciones. El objetivo es identificar los patrones demográficos, de servicio y financieros que correlacionan con la evasión para orientar acciones estratégicas de retención.
 
-Análisis de Variables Categóricas: Identificación de patrones en tipos de contrato, servicios de internet y métodos de pago.
+Como estudiante de **Ingeniería Ambiental**, este análisis aplica metodologías de ciencia de datos para resolver problemas de sostenibilidad comercial y optimización de recursos.
 
-Análisis de Variables Numéricas: Estudio de la antigüedad del cliente (tenure) y cargos financieros.
+---
 
-Visualizaciones Avanzadas: Uso de subplots, histogramas con tendencia (KDE) y gráficos de caja (Boxplots) para una comunicación clara.
+## 🚀 Funcionalidades y Flujo de Trabajo
+1. **Limpieza de Datos**: Tratamiento de nulos y estandarización de la variable objetivo `Churn` (0: Continúa, 1: Se retiró).
+2. **Análisis Categórico**: Evaluación del impacto de variables como género, tipo de contrato y servicios contratados.
+3. **Análisis Numérico**: Estudio de la antigüedad (`tenure`) y cargos financieros mediante histogramas de densidad y boxplots.
+4. **Visualización Estética**: Uso de estilos limpios (sin bordes superiores/derechos) y leyendas personalizadas para facilitar la comunicación de resultados.
 
-🛠️ Tecnologías y Dependencias
-El proyecto está desarrollado en Python utilizando las siguientes librerías:
+---
 
-Pandas: Para la manipulación y limpieza de estructuras de datos.
+## 🛠️ Tecnologías Utilizadas
+* **Python 3.x**
+* **Pandas**: Manipulación de datos.
+* **Matplotlib & Seaborn**: Generación de gráficos de alta fidelidad y visualización estadística.
 
-Matplotlib: Para la generación de la estructura base de los gráficos.
+---
 
-Seaborn: Para visualizaciones estadísticas avanzadas y estilizadas.
+## 📈 Insights Principales (Hallazgos)
 
-📈 Hallazgos Clave (Insights)
-Punto de Riesgo Crítico: La mayor tasa de abandono ocurre entre los 0 y 6 meses de antigüedad.
+### 1. El Factor Contrato
+Los clientes con contrato **"Mes a mes"** son los más propensos a retirarse (**1,655 casos**), representando el mayor riesgo operativo.
 
-Impacto del Contrato: Los contratos "Mes a mes" presentan 1,655 retiros, siendo el mayor foco de fuga.
+### 2. Periodo Crítico de Retención
+Se identificó una **fuga masiva** durante los primeros **0 a 6 meses** de servicio. Una vez superados los **20 meses**, la lealtad del cliente aumenta exponencialmente.
 
-Efecto de la Tecnología: Los usuarios con Fibra Óptica tienen una mayor tendencia al retiro (1,297 casos).
 
-📋 Cómo Ejecutar el Proyecto
-Clona este repositorio.
 
-Asegúrate de tener instalado Python 3.x.
+### 3. Servicio de Internet
+Los usuarios de **Fibra Óptica** presentan una tasa de abandono significativamente mayor (**1,297**) que otros segmentos, sugiriendo posibles problemas técnicos o de precio en esta tecnología.
 
-Instala las dependencias necesarias:
+---
 
-Bash
-pip install pandas matplotlib seaborn
-Abre el archivo .ipynb en Jupyter Notebook o VS Code para visualizar el flujo del análisis.
+## 📋 Cómo Ejecutar este Proyecto
+1. Clona el repositorio.
+2. Instala las dependencias necesarias:
+   ```bash
+   pip install pandas matplotlib seaborn
